@@ -1,0 +1,6 @@
+framework module Pods_CoreAnimation_CoreAnimationUITests {
+  umbrella header "Pods-CoreAnimation-CoreAnimationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
