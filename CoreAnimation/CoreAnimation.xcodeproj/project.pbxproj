@@ -16,6 +16,9 @@
 		0B74D6D525309526009ABE71 /* CoreAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B74D6D425309526009ABE71 /* CoreAnimationTests.swift */; };
 		0B74D6E025309526009ABE71 /* CoreAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B74D6DF25309526009ABE71 /* CoreAnimationUITests.swift */; };
 		0B9306D92530AD4B00F2A506 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9306D82530AD4B00F2A506 /* FirstViewController.swift */; };
+		0B9306DE2530B62600F2A506 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B9306DD2530B62600F2A506 /* Animation.storyboard */; };
+		0B9306E32530B6B800F2A506 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9306E22530B6B800F2A506 /* AnimationViewController.swift */; };
+		0B9306F32530C04800F2A506 /* ShakingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9306F22530C04800F2A506 /* ShakingTextField.swift */; };
 		13A57F0ECF04E433DCFF2569 /* Pods_CoreAnimation_CoreAnimationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BB7A1DEFABBDD2BE4F1804 /* Pods_CoreAnimation_CoreAnimationUITests.framework */; };
 		3EC7096B863AEC93832A7AED /* Pods_CoreAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB90F5BA0C7D0A13EB0FE77 /* Pods_CoreAnimation.framework */; };
 		7A19767F28D64E610E691D45 /* Pods_CoreAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880015E3D45E072A7F4E4197 /* Pods_CoreAnimationTests.framework */; };
@@ -54,6 +57,9 @@
 		0B74D6DF25309526009ABE71 /* CoreAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationUITests.swift; sourceTree = "<group>"; };
 		0B74D6E125309526009ABE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B9306D82530AD4B00F2A506 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0B9306DD2530B62600F2A506 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
+		0B9306E22530B6B800F2A506 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		0B9306F22530C04800F2A506 /* ShakingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingTextField.swift; sourceTree = "<group>"; };
 		2EB90F5BA0C7D0A13EB0FE77 /* Pods_CoreAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411B4AFBB93807B78BD960D7 /* Pods-CoreAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimation.release.xcconfig"; path = "Target Support Files/Pods-CoreAnimation/Pods-CoreAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		494A44019D14EF28E7E1B4D7 /* Pods-CoreAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreAnimationTests/Pods-CoreAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				0B74D6BC25309525009ABE71 /* CoreAnimation */,
+				0B74D6C625309526009ABE71 /* Assets.xcassets */,
+				0B74D6C825309526009ABE71 /* LaunchScreen.storyboard */,
+				0B74D6CB25309526009ABE71 /* Info.plist */,
 				0B74D6D325309526009ABE71 /* CoreAnimationTests */,
 				0B74D6DE25309526009ABE71 /* CoreAnimationUITests */,
 				0B74D6BB25309525009ABE71 /* Products */,
@@ -120,12 +129,8 @@
 			children = (
 				0B74D6BD25309525009ABE71 /* AppDelegate.swift */,
 				0B74D6BF25309525009ABE71 /* SceneDelegate.swift */,
-				0B74D6C125309525009ABE71 /* ViewController.swift */,
-				0B74D6C325309525009ABE71 /* Main.storyboard */,
-				0B74D6C625309526009ABE71 /* Assets.xcassets */,
-				0B74D6C825309526009ABE71 /* LaunchScreen.storyboard */,
-				0B74D6CB25309526009ABE71 /* Info.plist */,
-				0B9306D82530AD4B00F2A506 /* FirstViewController.swift */,
+				0B9306E72530B6C800F2A506 /* Animation 1 */,
+				0B9306E82530B75A00F2A506 /* Animation 2 */,
 			);
 			path = CoreAnimation;
 			sourceTree = "<group>";
@@ -146,6 +151,26 @@
 				0B74D6E125309526009ABE71 /* Info.plist */,
 			);
 			path = CoreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		0B9306E72530B6C800F2A506 /* Animation 1 */ = {
+			isa = PBXGroup;
+			children = (
+				0B74D6C125309525009ABE71 /* ViewController.swift */,
+				0B74D6C325309525009ABE71 /* Main.storyboard */,
+				0B9306D82530AD4B00F2A506 /* FirstViewController.swift */,
+			);
+			path = "Animation 1";
+			sourceTree = "<group>";
+		};
+		0B9306E82530B75A00F2A506 /* Animation 2 */ = {
+			isa = PBXGroup;
+			children = (
+				0B9306DD2530B62600F2A506 /* Animation.storyboard */,
+				0B9306E22530B6B800F2A506 /* AnimationViewController.swift */,
+				0B9306F22530C04800F2A506 /* ShakingTextField.swift */,
+			);
+			path = "Animation 2";
 			sourceTree = "<group>";
 		};
 		31EE625460EE01FB1FF46DB4 /* Pods */ = {
@@ -282,6 +307,7 @@
 				0B74D6CA25309526009ABE71 /* LaunchScreen.storyboard in Resources */,
 				0B74D6C725309526009ABE71 /* Assets.xcassets in Resources */,
 				0B74D6C525309525009ABE71 /* Main.storyboard in Resources */,
+				0B9306DE2530B62600F2A506 /* Animation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +436,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B74D6C225309525009ABE71 /* ViewController.swift in Sources */,
+				0B9306F32530C04800F2A506 /* ShakingTextField.swift in Sources */,
 				0B74D6BE25309525009ABE71 /* AppDelegate.swift in Sources */,
+				0B9306E32530B6B800F2A506 /* AnimationViewController.swift in Sources */,
 				0B74D6C025309525009ABE71 /* SceneDelegate.swift in Sources */,
 				0B9306D92530AD4B00F2A506 /* FirstViewController.swift in Sources */,
 			);
